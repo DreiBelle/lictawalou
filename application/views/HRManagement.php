@@ -65,17 +65,17 @@
         }
 
         .modal-content {
-            background-color: #f9f9f9;
-            border: 1px solid #f9f9f9;
-            color: black;
-            font-family: "Arial", "Helvetica", sans-serif;
-        }
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        .modal-content h2 {
-            color: black;
-            font-family: "Arial", "Helvetica", sans-serif;
-        }
-
+.modal-content h2,
+.modal-content label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
         .modal-content label {
             color: black;
             font-family: "Arial", "Helvetica", sans-serif;
@@ -111,7 +111,6 @@
         }
 
         table {
-
             border-collapse: collapse;
             font-family: "Arial", "Helvetica", sans-serif;
         }
@@ -124,13 +123,15 @@
         }
 
         th {
-            background-color: #f9f9f9;
-            color: black;
-            font-family: "Arial", "Helvetica", sans-serif;
+            font-weight: bold;
         }
 
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: transparent;
+        }
+
+        tr:hover {
+            background-color: transparent;
         }
 
         /* tr:hover {
@@ -161,6 +162,8 @@
         .modal {
             display: none;
             position: fixed;
+            margin-left: 500px;
+            margin-top: -50px;
             z-index: 1;
             left: 0;
             top: 0;
@@ -239,6 +242,7 @@
             font-family: "Arial", "Helvetica", sans-serif;
         }
 
+        /* 
         .form-container input[type="submit"] {
             background-color: #f9f9f9;
             color: black;
@@ -250,20 +254,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
             font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        .form-container input[type="cancel"] {
-            background-color: #f9f9f9;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
+        } */
     </style>
 </head>
 
@@ -352,10 +343,10 @@
                         <input type="text" name="AddressInput" id="AddressInput" required
                             style="border: 1px solid gray;">
                         <div>
-                        <input type="submit" value="SAVE"
-                                    style="display: inline-block; background-color: #007bff; color: #fff; border: none; border-radius: 4px; padding: 8px 16px; margin-right: 10px; cursor: pointer;">
+                            <input type="submit" value="SAVE"
+                                style="display: inline-block; background-color: #007bff; color: #fff; border: none; border-radius: 4px; padding: 8px 16px; margin-right: 10px; cursor: pointer;">
                             <input type="button" value="CANCEL" onclick="closeForm()"
-                                    style="display: inline-block; background-color: #dc3545; color: #fff; border: none; border-radius: 4px; padding: 8px 16px; cursor: pointer; width: 360px; margin-top: 5px;">
+                                style="display: inline-block; background-color: #dc3545; color: #fff; border: none; border-radius: 4px; padding: 8px 16px; cursor: pointer; width: 360px; margin-top: 5px;">
                         </div>
                     </form>
                 </div>
