@@ -133,7 +133,7 @@
             background-color: #f9f9f9;
         }
 
-        tr:hover {
+        /* tr:hover {
             background-color: #f2f2f2;
         }
 
@@ -156,7 +156,7 @@
         .action-btn.edit-btn:hover,
         .action-btn.delete-btn:hover {
             background-color: #2980b9;
-        }
+        } */
 
         .modal {
             display: none;
