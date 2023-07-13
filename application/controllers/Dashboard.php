@@ -8,17 +8,6 @@ class Dashboard extends CI_Controller {
         $this->load->library('session');
     }
 
-    // public function index() {
-    //     $user = $this->session->userdata('user');
-    //     if ($user) {
-    //         $data['user'] = $user;
-    //         $this->load->view('Dashboard', $data);
-    //     }
-    //     else {
-    //         redirect('LoginController');
-    //     }
-    // }
-//new
     public function index() {
         $user = $this->session->userdata('user');
         if ($user['role'] == "Administrator") {
